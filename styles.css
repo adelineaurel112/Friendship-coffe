@@ -1,0 +1,163 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #090705;
+    color: #0f0b08;
+}
+
+header {
+    background-color: #2f0404;
+    color: #f5e5d5;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Brush Script MT', cursive;
+}
+
+nav {
+    background-color: #35200b;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #95918d;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    object-fit: cover;
+}
+
+.hero-content {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #d4a76a;
+    color: #050403;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c29355;
+}
+
+.menu-preview {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.menu-item {
+    background-color: #3b3939;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(241, 238, 238, 0.1);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    width: calc(33.333% - 1rem);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.menu-item h3 {
+    color: #a69c94;
+}
+
+.harga {
+    background-color: #422d0e;
+    color: rgb(217, 218, 199);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(250, 247, 247, 0.1);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    width: calc(30% - 1rem);
+    box-sizing: border-box;
+    text-align: center;
+    width: 200px; /* Tentukan lebar elemen */
+    border: 1px solid #fffbf4;
+    margin: 0 auto; /* Memusatkan secara horizontal */
+    padding: 20px;
+}
+.harga:hover{
+    background-color: #644415; /* Warna baru saat hover */
+    width: 200px;
+    margin: auto;
+    background-color: #644415;
+    transition: transform 0.3s; /* Animasi halus saat berubah */
+    transform: scale(1.2); /* Memperbesar elemen saat hover */
+}
+
+footer {
+    background-color: #420707;
+    color: #f5e5d5;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 2rem;
+    background: linear-gradient(to bottom, rgba(55, 9, 9, 0.5), rgba(151, 32, 12, 0.5));
+}
+.add-to-cart {
+    background: none;
+    border: none;
+    color: #d4a76a; /* Ubah warna sesuai keinginan */
+    font-size: 1.5rem; /* Ukuran ikon */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.add-to-cart:hover {
+    color: #c29355; /* Warna saat hover */
+}
